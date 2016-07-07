@@ -4,6 +4,21 @@
 	<meta charset="UTF-8">
 	<title>大漠苍狼</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<SCRIPT src="js/jquery-1.9.1.min.js" type="text/javascript"></SCRIPT>
+	<script src="js/db-account.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	window.onload = function () {
+		debugger;
+		var isLogin = "4587d969cf22f75978fb3543105db14ef";
+		queryByName("isLogin",function(res){
+			if(res.rows.length > 0 && res.rows[0].password == isLogin){
+				
+			}else{
+				window.location.href="./login.html";
+			}
+		});
+	}
+	</script>
 </head>
 <body>
 <aside>
@@ -95,9 +110,9 @@
 					</tr>
 					<tr>
 						<td colspan="3">
-							<p>项目：</p><br>
-							<a href="http://www.1-yd.com/">1. 顺手付</a><br>
-							<a>2. </a><br><br>
+							<p>项目：顺手付</p><br>
+							<a href="http://www.sf-express.com/cn/sc/bank/bank/sfpay/">顺手付官网</a><br>
+							<a>顺手付android端的框架拆分和拆分框架搭建和设计工作；</a><br><br>
 							<p></p><br>
 							<a href="http://www.17sucai.com/boards/117475.html">1. 手工皂（注：瀑布流本地没问题） </a>
 							<a href="http://www.17sucai.com/boards/117475.html">2. 个人主页 </a>
