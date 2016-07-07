@@ -93,8 +93,7 @@ function del (name, callback) {
 		});
 	});
 }
-
-$(function(){
+$(function(argument) {
 	createDB();
 	createTable();
 	queryByName('admin', function(res){
@@ -103,3 +102,5 @@ $(function(){
 		}
 	});
 });
+
+

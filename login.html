@@ -157,7 +157,7 @@ function login(){
 	query(name, $.md5($.md5(password))+"e",function(res){
 		if(res.rows.length > 0){
 			insert("isLogin",$.md5($.md5("isLogin=true"))+"f");
-			window.location.href="./index.html";
+			window.location.href="./home.html";
 		}else{
 			alert("用户名或密码不正确！");
 		}
