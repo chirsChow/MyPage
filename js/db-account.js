@@ -93,7 +93,7 @@ function del (name, callback) {
 		});
 	});
 }
-$(function(argument) {
+function initDB() {
 	createDB();
 	createTable();
 	queryByName('admin', function(res){
@@ -101,6 +101,7 @@ $(function(argument) {
 			insert('admin', '14e1b600b1fd579f47433b88e8d85291e');
 		}
 	});
-});
+}
+initDB();
 
 
